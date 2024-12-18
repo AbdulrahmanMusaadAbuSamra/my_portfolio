@@ -15,6 +15,7 @@
             rel="stylesheet"
             href="css/all.min.css"
         >
+        <link rel="stylesheet" href="css/mobaile.css">
     </head>
     <body>
         <header id="header">
@@ -38,6 +39,7 @@
                         <li><a href="#section-6">Contact</a></li>
                     </ul>
                 </nav>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </header>
         <!-- end header -->
@@ -47,17 +49,18 @@
             id="section-1"
         >
             <div class="container">
-                <div>
+                <div class="text-section-1">
                     <p>
                         HELLO!
                     </p>
                     <h1>
-                        I'm <span>Web designer </span>based in Damietta
+                        I'm a <span>website development </span>based in Damietta
                     </h1>
                     <div>
-                        <button class="button-1">
+                        <a href="mailto:abdulrahmanabusamra0@gmail.com" class="button-1">HIRE ME</a>
+                        <!-- <button class="button-1" href="mailto:abdulrahmanabusamra0@gmail.com">
                             HIRE MY
-                        </button>
+                        </button> -->
                         <button class="button-2">
                             MY WORKS
                         </button>
@@ -68,9 +71,15 @@
                     alt="photo"
                 > -->
                 <img
+                    class="imge-section-1"
                     src="image/WhatsApp Image 2024-11-19 at 11.15.02 PM.jpeg"
                     alt=""
                 >
+                <img
+                    class="imge-section-2"
+                    src="image/ei_1731624900400-removebg.png"
+                    alt=""
+                    >
             </div>
         </section>
         <!-- end section-1 -->
@@ -93,7 +102,7 @@
                 </div>
                 <div class="content-image">
                     <img
-                        src="image/IMG_٢٠٢٤١١١٥_٠١٠٨٠٧.png"
+                        src="image/ei_1731624900400-removebg.png"
                         alt=""
                     >
                     <div class="content">
@@ -127,7 +136,7 @@
                             </span>
                             Project complete
                         </h3>
-                        <button>
+                        <button href="your-file.pdf">
                             DOWNLOAD CV
                         </button>
                     </div>
@@ -374,19 +383,28 @@
                     >
                     <form action="">
                         <input
+                            id="name"
+                            name="name"
                             type="text"
+                            autocomplete="name"
                             placeholder="Your name"
                             onkeyup="moveToNextInput(event)"
                             required
                         >
                         <input
+                            id="email"
+                            name="email"
                             type="email"
+                            autocomplete="email"
                             placeholder="Your Email"
                             onkeyup="moveToNextInput(event)"
                             required
                         >
                         <input
                             type="text"
+                            id="text"
+                            name="text"
+                            autocomplete="text"
                             placeholder="Subject"
                             onkeyup="moveToNextInput(event)"
                         >
@@ -483,6 +501,9 @@
                         adipisicing elit,</p>
                     <form>
                         <input
+                            id="email"
+                            name="email"
+                            autocomplete="email"
                             type="email"
                             placeholder="Your email address"
                         >
